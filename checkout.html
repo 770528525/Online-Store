@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="icon" href="imges/1737468304378.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="top-header d-flex align-items-center py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <a href="">
+                            <img width="150" src="imges/1737468304339.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4 ">
+                        <input type="text" class="form-control" placeholder="ابحث على المنتج هنا">
+                    </div>
+
+
+                    <div class=" col-md-4 lef-header d-flex align-items-center d-none d-lg-flex justify-content-end">
+                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+                            <span>السلة</span>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+
+                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+                            <span>الدخول</span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+
+                        <a href="">
+                            <span>المفضلة</span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div> <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
+                            href="#cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                    </div>
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الحواسيب</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الجوالات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الملابس</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الحذيه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">ادوات منزلية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الالكسوارات</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- end header -->
+
+
+
+
+    <section class="bunnner">
+        <h1 class="category-title">
+            اتمان الطلب
+        </h1>
+
+    </section>
+
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="user-info">
+                        <h4 class="card-product-title my-3">معلومات الشحن</h4>
+                        <div class="">
+                            <label for="" class="form-label">الاسم:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء ادخال الاسم">
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="form-label">الايميل:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء ادخال البريد الكتروني">
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="form-label">العنوان:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء ادخال  العنوان">
+                        </div>
+                        <div class="mt-3">
+                            <label for="" class="form-label">رقم الهاتف:</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="الرجاء ادخال  الهاتف">
+                        </div>
+
+
+                        <div class="mt-3">
+                            <label for="" class="form-label">اسم الدولة :</label>
+                            <select class="form-select">
+                                <option selected disabled>الرجاء اختيار الدوله</option>
+                                <option value="yemen"> اليمن</option>
+                                <option value="tarkey"> تركيا</option>
+                                <option value="phalctayen"> فلسطين</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="" class="form-label">اسم المدينه :</label>
+                            <select class="form-select">
+                                <option selected disabled>الرجاء اختيار المدينه</option>
+                                <option value="yemen"> اليمن</option>
+                                <option value="tarkey"> تركيا</option>
+                                <option value="phalctayen"> فلسطين</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="" class="form-label"> تفاصيل السكن:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء ادخال تفاصيل السكن">
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="" class="form-label">ملاحظات حول الشحن :</label>
+                            <textarea name="" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row row-cols-1 row-min-card m-1 ">
+
+
+                        <!-- قسم التفاصيل -->
+                        <div class="card shadow justify-content-around ">
+
+                            <div class="card-body d-flex justify-content-between">
+
+
+                                <p class="cart-product-titile">الصنف</p>
+
+
+
+                                <p class="cart-product-titile">السعر</p>
+
+
+                                <p class="cart-product-titile">اختر الحجم والكمية</p>
+
+                                <p class="cart-product-titile">الجمالي</p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="card shadow justify-content-around mb-2">
+
+                            <div class="card-body d-flex justify-content-between">
+    
+                                <div class="d-flex flex-column flex-md-row gap-2 align-items-center">
+                                    <img src="imges/products/1737468696278.jpg" width="80px" alt="صورة المنتج">
+    
+                                    <h1 class="card-title fw-bold text-primary  title-cart">جوال سامسونج </h1>
+    
+                                </div>
+                                <p>345$</p>
+    
+                                <!-- <h4 class="text-success fw-bold tlt-card">75 ر.س</h4> -->
+                                <!-- خيارات الحجم -->
+                                <div class=" cart-size d-flex flex-column ">
+                                    <h3>اختر الحجم:</h3>
+                                    <div class="mt-2">
+                                        <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="sizeS">S</label>
+    
+                                        <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off"
+                                            checked>
+                                        <label class="btn btn-outline-primary" for="sizeM">M</label>
+    
+                                        <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="sizeL">L</label>
+                                    </div>
+                                    <!-- اختيار الكمية -->
+                                    <div class="btn-group d-flex btns-quantity group-card1 mt-2">
+                                        <h3>الكمية:</h3>
+                                        <div class="input-group" style="max-width: 150px">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                onclick="updateQuantity(-1)">-</button>
+                                            <input type="number" class="form-control text-center" value="1" min="1"
+                                                id="quantity">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                onclick="updateQuantity(1)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>570$</p>
+    
+                            </div>
+                        </div>
+                        <div class="card shadow justify-content-around mb-2">
+    
+                            <div class="card-body d-flex  justify-content-between">
+    
+                                <div class="d-flex flex-column flex-md-row gap-2 align-items-center">
+                                    <img src="imges/products/1737468696240.jpg" width="80px" alt="صورة المنتج">
+    
+                                    <h1 class="card-title fw-bold text-primary  title-cart">سماعات  </h1>
+    
+                                </div>
+                                <p>89$</p>
+    
+                                <!-- <h4 class="text-success fw-bold tlt-card">75 ر.س</h4> -->
+    
+    
+    
+                                <!-- خيارات الحجم -->
+                                <div class=" cart-size d-flex flex-column ">
+                                    <h3>اختر الحجم:</h3>
+                                    <div class="mt-2">
+                                        <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="sizeS">S</label>
+    
+                                        <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off"
+                                            checked>
+                                        <label class="btn btn-outline-primary" for="sizeM">M</label>
+    
+                                        <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="sizeL">L</label>
+                                    </div>
+                                    <!-- اختيار الكمية -->
+                                    <div class="btn-group d-flex btns-quantity group-card1 mt-2">
+                                        <h3>الكمية:</h3>
+                                        <div class="input-group" style="max-width: 150px">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                onclick="updateQuantity(-1)">-</button>
+                                            <input type="number" class="form-control text-center" value="1" min="1"
+                                                id="quantity">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                onclick="updateQuantity(1)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>89$</p>
+    
+                            </div>
+                        </div>
+                        <div class="card shadow justify-content-around mb-2">
+    
+                            <div class="card-body d-flex justify-content-between">
+    
+                                <div class="d-flex flex-column flex-md-row gap-2 align-items-center">
+                                    <img src="imges/products/1737468696303.jpg" width="80px" alt="صورة المنتج">
+    
+                                    <h1 class="card-title fw-bold text-primary  title-cart">جوال iphone </h1>
+    
+                                </div>
+                                <p>544$</p>
+    
+                                <!-- <h4 class="text-success fw-bold tlt-card">75 ر.س</h4> -->
+    
+    
+    
+                                <!-- خيارات الحجم -->
+                                <div class=" cart-size d-flex flex-column ">
+                                    <h3>اختر الحجم:</h3>
+                                    <div class="mt-2">
+                                        <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="sizeS">S</label>
+    
+                                        <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off"
+                                            checked>
+                                        <label class="btn btn-outline-primary" for="sizeM">M</label>
+    
+                                        <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="sizeL">L</label>
+                                    </div>
+                                    <!-- اختيار الكمية -->
+                                    <div class="btn-group d-flex btns-quantity group-card1 mt-2">
+                                        <h3>الكمية:</h3>
+                                        <div class="input-group" style="max-width: 150px">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                onclick="updateQuantity(-1)">-</button>
+                                            <input type="number" class="form-control text-center" value="1" min="1"
+                                                id="quantity">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                onclick="updateQuantity(1)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>544$</p>
+    
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <hr class="hr">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div class="code d-flex ">
+                            <input type="text" class="form-control w-50">
+                            <button class="btn btn-primary">طبيق الكوبون</button>
+
+                        </div>
+
+                        <div class=" d-flex total-price align-items-center">
+
+                            الجمالي : 2300$
+
+                        </div>
+                    </div>
+
+
+                    <div class="payments mt-4">
+                        <div class="">
+
+                            <input type="radio" name="payment" id="">
+                            <label for="" class="form-label">الدفع بستخدام البيبال</label>
+                        </div>
+                        <div class="">
+
+                            <input type="radio" name="payment" id="">
+                            <label for="" class="form-label">الدفع بستخدام الفيزاءكارد</label>
+                        </div>
+                        <div class="">
+
+                            <input type="radio" name="payment" id="">
+                            <label for="" class="form-label">الدفع بستخدام حواله بنكية</label>
+                        </div>
+
+
+
+                        <div class="master-card mt-3">
+                            <h4 class="card-product-title">يمكنكم الدفع بشكل امن عن طريق الفيز كارد</h4>
+
+                            <div class="position-relative">
+                                <label for="" class="form-label">رقم البطاقة:</label>
+                                <input type="text" class="form-control">
+                                <img class="position-absolute" src="imges/1737468304327.png" alt="">
+                            </div>
+
+                            <div class="d-flex mt-3 gap-2">
+
+                                <div class="w-100">
+                                    <label for="" class="form-label">تاريخ الانتهاء :</label>
+                                    <input type="text" class="form-control" placeholder="سنة / شهر / يوم">
+                                </div>
+
+                                <div class="w-100">
+                                    <label for="" class="form-label">رمز الامان :</label>
+                                    <input type="text" class="form-control" placeholder="CVC">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-danger w-100 mt-3">اتمام الطلب</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        </div>
+
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col f1 mb-3">
+                    <img class="w-75" src="imges/1737468304339.png" alt="logo">
+                    <p class="text-white">
+                        متجرنا يهتم بالجودة والخامة النظيفة ويسعى الى توفير كل جديد وكل ما يرضي عملانئا
+                    </p>
+                    <ul class="navbar-nav text-white">
+                        <li><i class="fa-solid fa-location-dot my-2"></i>اليمن - صنعاء</li>
+                        <li><i class="fa-solid fa-phone"></i>770528525</li>
+                        <li><i class="fa-solid fa-envelope"></i>halmnshahy@gmail.com</li>
+                    </ul>
+
+                </div>
+                <div class="col f2 mb-3">
+                    <h3>اهم الروابط</h3>
+                    <Ul class="navbar-nav ">
+                        <li><a href="">الجوالات</a></li>
+                        <li><a href="">الجوالات</a></li>
+                        <li><a href="">الساعات</a></li>
+                        <li><a href="">الالكسوارات</a></li>
+                    </Ul>
+                </div>
+                <div class="col f3 mb-3">
+                    <h3>التصنيفات </h3>
+                    <Ul class="navbar-nav">
+                        <li><a href="">الجوالات</a></li>
+                        <li><a href="">الجوالات</a></li>
+                        <li><a href="">الساعات</a></li>
+                        <li><a href="">الالكسوارات</a></li>
+                    </Ul>
+                </div>
+                <div class="col f4 mb-3">
+                    <h3>النشره البريدية</h3>
+                    <p>
+                        متجرنا يهتم بالجودة والخامة النظيفة ويسعى الى توفير كل جديد وكل ما يرضي عملانئا
+                    </p>
+                    <form action="">
+                        <input type="text" placeholder="الرجا ادخال البريد" class="form-control mb-3">
+                        <button class="btn btn-danger w-100">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="row row-cols-1 row-cols-md-2 mt-3">
+                <div class="col">
+                    <img src="imges/1737468304327.png" alt="">
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <p class="text-white text-center"> متجر الحطامي الادوات الكترونية2025 &copy; جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+
+
+    <!-- modal -->
+    <div class="modal fade" id="quick-product" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">سامسونج S23 </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col ">
+                            <img class="img-fluid my-5" src="imges/products/1737468696227.jpg" alt=">سامسونج S23">
+                            <button class="btn btn-primary w-100">كافة التفاصيل</button>
+                        </div>
+
+                        <div class="col">
+                            <img width="28%" class="mt-3" src="imges/products/samsund.jpg" alt="">
+                            <h1 class="modal-title fs-5 my-1">سامسونج S23</h1>
+                            <p class="product-description">تنوعت سامسونج في العديد من المجالات المختلفة. سعى لي لتأسيس
+                                شركة سامسونج كشركة رائدة في
+                                مجموعة واسعة من الصناعات.</p>
+                            <div class="quick-reviews mb-2">
+                                <span>تقيمات المستخدمين</span>
+                                <div class="stats mb-2 d-inline-flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="rrice mb-2">
+                                <span>السعر 250$</span>
+                                <span>400$</span>
+                            </div>
+                            <div class="btns d-flex gap-2 ">
+                                <div class="btn-group btns-quantity">
+                                    <button type="button" class="btn ">+</button>
+                                    <button type="button" class="btn">1</button>
+                                    <button type="button" class="btn ">-</button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-danger">اضافةالى السلة</button>
+                                    <button class="btn btn-success">شراء الان</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="gategory">
+                                <span>التصنيفات:</span>
+                                <a href=""> جوالات سامسونج</a>
+                            </div>
+                            <div class="share d-flex gap-2">
+                                <span>المشاركة:</span>
+                                <div class="share-icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cart -->
+
+
+    <section class="offcanvas offcanvas-end " tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cart">السلة</h5>
+            <div>
+
+
+            </div>
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="row ">
+                <!-- قسم التفاصيل -->
+                <div class="card shadow justify-content-around mb-2">
+                    <div class="card-body ">
+                        <div class="d-flex">
+                            <img src="imges/products/1737468696159.jpg" class=" rounded-3 shadow imagg"
+                                alt="صورة المنتج">
+                            <h1 class="card-title fw-bold text-primary my-4 title-cart">السماعات  </h1>
+                            <h4 class="text-success fw-bold tlt-card">40 $</h4>
+                        </div>
+
+                        <!-- خيارات الحجم -->
+                        <div class="mb-4 my-3 cart-size ">
+                            <h3>اختر الحجم:</h3>
+                            <div class="btn-group group-card" role="group">
+                                <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="sizeS">S</label>
+
+                                <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="sizeM">M</label>
+
+                                <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="sizeL">L</label>
+                            </div>
+                            <!-- اختيار الكمية -->
+                            <div class="btn-group d-flex btns-quantity group-card1">
+                                <h3>الكمية:</h3>
+                                <div class="input-group" style="max-width: 150px">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="updateQuantity(-1)">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1"
+                                        id="quantity">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="updateQuantity(1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card shadow justify-content-around mb-2">
+                    <div class="card-body ">
+                        <div class="d-flex">
+                            <img src="imges/products/laptop/1737468836429.jpg" class=" rounded-3 shadow imagg"
+                                alt="صورة المنتج">
+                            <h1 class="card-title fw-bold text-primary my-4 title-cart"> كمبيوتر </h1>
+                            <h4 class="text-success fw-bold tlt-card">340$</h4>
+                        </div>
+
+                        <!-- خيارات الحجم -->
+                        <div class="mb-4 my-3 cart-size ">
+                            <h3>اختر الحجم:</h3>
+                            <div class="btn-group group-card" role="group">
+                                <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="sizeS">S</label>
+
+                                <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="sizeM">M</label>
+
+                                <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="sizeL">L</label>
+                            </div>
+                            <!-- اختيار الكمية -->
+                            <div class="btn-group d-flex btns-quantity group-card1">
+                                <h3>الكمية:</h3>
+                                <div class="input-group" style="max-width: 150px">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="updateQuantity(-1)">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1"
+                                        id="quantity">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="updateQuantity(1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card shadow justify-content-around mb-2">
+                    <div class="card-body ">
+                        <div class="d-flex">
+                            <img src="imges/products/1737468696303.jpg" class=" rounded-3 shadow imagg"
+                                alt="صورة المنتج">
+                            <h1 class="card-title fw-bold text-primary my-4 title-cart">جوال سامسونج </h1>
+                            <h4 class="text-success fw-bold tlt-card">250$</h4>
+                        </div>
+
+                        <!-- خيارات الحجم -->
+                        <div class="mb-4 my-3 cart-size ">
+                            <h3>اختر الحجم:</h3>
+                            <div class="btn-group group-card" role="group">
+                                <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="sizeS">S</label>
+
+                                <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="sizeM">M</label>
+
+                                <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="sizeL">L</label>
+                            </div>
+                            <!-- اختيار الكمية -->
+                            <div class="btn-group d-flex btns-quantity group-card1">
+                                <h3>الكمية:</h3>
+                                <div class="input-group" style="max-width: 150px">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="updateQuantity(-1)">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1"
+                                        id="quantity">
+                                    <button class="btn btn-outline-primary" type="button"
+                                        onclick="updateQuantity(1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <!-- السعر وإضافة للسلة -->
+            <div class="d-flex justify-content-between align-items-center ">
+                <h2 class="text-success fw-bold ">500$</h2>
+               <a href="cart.html">
+                <button class="btn btn-primary btn-lg">
+                    <i class="bi bi-cart-plus"></i> أضف للسلة
+                </button>
+               </a> 
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!-- start filter -->
+
+
+    <section class="offcanvas offcanvas-end " tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cart">الفلترة</h5>
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="filter-section sticky-lg-top">
+                <h4 class="filter-title">فلترة بالبحث</h4>
+                <input type="text" class="form-control" placeholder="اكتب اسم المنتج للبحث عنة">
+
+                <select name="" id="" class="form-select mt-3">
+                    <option value="">جوال</option>
+                    <option value="">جوال</option>
+                    <option value="">جوال</option>
+                    <option value="">جوال</option>
+                    <option value="">جوال</option>
+                </select>
+
+                <hr>
+                <h4 class="filter-title ">فلترة بالتصنيف</h4>
+                <div class="filter-radio d-flex flex-column gap-2">
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                </div>
+                <h4 class="filter-title mt-3">فلترة بنوع المعالج</h4>
+                <div class="filter-radio d-flex flex-column gap-2">
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونج</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <!-- login -->
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+         <div class="mini-login">
+            <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">اسم المستخدم او البريد </label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                 
+                </div>
+                <div class="mb-3">
+                  <label for="Password1" class="form-label">كلمة المرور</label>
+                  <input type="password" class="form-control" id="Password1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">تذكر بياناتي</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+              </form>
+              <div class="alert alert-danger my-3 text-center" >
+                <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+              </div>
+
+              <hr>
+
+              <div class="text-center mt-4">
+                <i class="fa fa-regular fa-user fa-3x"></i>
+                <p>لايوجد لديك حساب ؟</p>
+                <a href="login.html" class="btn btn-danger w-100 text-white">انشاء حساب جديد</a>
+              </div>
+         </div>
+
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!--start fluter -->
+    <script src="js/jquery.js"></script>
+    <script src="js/isotope.js"></script>
+
+    <script src="js/swiper.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+
+    <!--end fluter -->
+    <script src="js/bootstap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
